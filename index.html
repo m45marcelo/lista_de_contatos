@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="titulo-lista">
+            <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfJPQsvuEV3gfc7ZZ74fZA0ebOepsLIxfRWA&s" alt="">
+            <h1>Lista Telefônica</h1>
+        </div>
+
+        <form class="inputs" id="form">
+
+        <input id="nome-contato" type="text" required placeholder="Digite o nome do contato" >
+        <input id="numero-contato" type="tel" pattern="[0-9]{10,11}" required placeholder="Digite o numero do contato" maxlength="11" >
+        
+        <button type="submit" id="btn-adicionar">Adicionar Contato +</button>
+
+        </form>
+        
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome do contato</th>
+                        <th>Numero do contato</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>                   
+                </tbody>
+
+            </table>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
